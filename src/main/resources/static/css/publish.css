@@ -1,0 +1,45 @@
+body{
+    background:url(../img/bg_blue.jpg);
+}
+
+#publish{
+    margin: 0 auto;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+button{
+    background-color:#97CBFF; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.div_test{
+    margin: 50px 0 0 0;
+}
+
+
+.div_que{
+    width: 400px;
+    height: 500px;
+    /*border: solid 1px;*/
+    margin: 40px auto;
+    border:1px solid #bbe1f1;
+    background: #eefaff;
+    overflow: auto;
+    text-align: center;
+}
+#div_pubtn{
+    text-align: center;
+}
+#TeaTimeConfig{
+    width: 400px;
+    margin: 40px 0 0 900px;
+}

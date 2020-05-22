@@ -1,0 +1,127 @@
+
+	h2{
+		text-align: center;
+	    color: orange;/*orchid*/
+	  }
+	.context{
+		width: 700px;/*500*/
+		height: 100px;/*300*/
+		/*border: 1px solid #9bdf70;
+		background:  #f0fbeb;*/
+		margin: 100px auto;
+		text-align: center;
+		font-size: 40px;
+		word-wrap: break-word;
+	}
+	.input_Area{
+		/*margin: 0 auto;*/
+		text-align: center;
+		margin-top:170px ;
+		display: none;
+		position: relative;
+		z-index: 1;
+	}
+	.input{
+		border:1px solid #bbe1f1;
+		width: 400px;
+		height: 200px;
+		text-align: center;
+		line-height: 20px;
+		background: #eefaff;
+	}
+	button {
+    background-color:#97CBFF; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+    .button{
+    	position: absolute;
+    	margin: 220px 0 0 -250px;
+    	
+    }
+    .time{
+    	text-align: right;
+    	margin-top: -55px;
+    }
+    .testGrade_ul{
+    	list-style: none;
+    	padding: 100px 0 0 140px;
+    	line-height: 40px;
+    }
+    .testGrade{
+    	width: 437px;
+    	height: 350px;
+    	background-image:url("../img/grade.jpg") ;
+    	background-repeat:no-repeat ;
+    	margin: -500px auto;
+    	display: none;
+    	position: relative;
+    	z-index: 100;
+    }
+    .hidden{
+    	width: 100%;
+    	height: 2000px;
+    	border: solid 1px;
+    	background-color: gainsboro;
+    	position: absolute;
+    	z-index: 20;
+    	opacity: 0.5;
+    	display: none;
+    }
+    body,html {margin:0; height:100%;
+          
+    }
+    .tip{
+    	width:74px ;/*140*/
+    	height: 62px;/*100*/
+    	position: absolute;
+    	margin: -240px 0 0 900px;
+    	background:url(../img/right1.jpg);
+    	background-size: cover;
+    	display: none;
+    	 
+    }
+    .tip p{
+    	margin:38px 0 0 57px ;
+    }
+    .div_terms{
+    	text-align: center;
+		margin-top:200px ;
+		position: relative;
+		display: none;
+    }
+    .terms_input{
+    	border:1px solid #bbe1f1;
+		width: 400px;
+		height: 45px;
+		text-align: center;
+		line-height: 100px;
+		font-size: 2em;
+		background: #eefaff;
+    }
+    body{
+    	background:url(../img/bg_blue.jpg);
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    }
+    .div_wordGame{
+    	display: none;
+    }
+    .runtest{
+    	/*display: none;*/
+    	margin: -40px 0 0 1100px;
+    	position: absolute;
+    	
+    }
+    .div_tipGrade{
+    	margin: -40px 0 0 1050px;
+    	position: absolute;
+    }
+.div_stuInfo{
+	display: none;
+}

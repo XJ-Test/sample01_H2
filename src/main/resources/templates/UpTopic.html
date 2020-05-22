@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!-- <script language="JavaScript" src="/static/js/UpTopic.js"></script>
+     <script  type="text/javascript" src="/static/js/jquery-1.6.1.min.js"></script>-->
+    <link href="../static/css/uptopic.css" rel="stylesheet" type="text/css"/>
+    <title>Title</title>
+
+
+</head>
+<body>
+<div class="main">
+
+    <div class="login">
+        <div class="heard">上传文件</div>
+        <span th:text="${tip}" class="_span" style="color:#F00"></span>
+        <form  action="/UpTopicController"  method="post" enctype="multipart/form-data">
+
+            <input type="file" name="file" id="pic" accept="" class="up" />
+            <input type="submit" value="确定" class="btn_determine" >
+        </FORM>
+        <a href="TeacherIndex">
+            <input type="button" value="返回" class="btn" >
+        </a>
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="../static/js/jquery-1.6.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/userchangepwd.css"/>
+<!--    <script language="JavaScript" src="js/userChangePwd.js"></script>-->
+    <title>修改密码</title>
+</head>
+<body>
+    <div class="main">
+        <div class="login">
+            <div class="heard">修改密码</div>
+            <div class="form">
+                <p style="color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+                <form class="form_userChangePwd" method="post" action="/userUpdatePwd">
+                    <!--用户ID--><input type="hidden" name="userID" class="userID" th:value="${session.userID}">
+                    <input type="userPwd" name="userPwd" placeholder="旧密码" class="input-item"></input>
+                    <input type="password" name="newPwd"placeholder="新密码" class="input-item"></input>
+                    <input type="password" name="surePwd"placeholder="确认新密码" class="input-item"></input>
+<!--                    <div class="button">确认</div>-->
+                    <button type="submit" class="button">确定</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

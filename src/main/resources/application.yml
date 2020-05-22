@@ -1,0 +1,31 @@
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:dbtest
+    username: sa
+    password: sa
+#    url: jdbc:h2:file:E:/db_data/sample
+    driver-class-name: org.h2.Driver
+    platform: h2
+    initialization-mode: always
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    filters: stat,wall,slf4j
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true,druid.stat.slowSqlMillis=500
+    validationQuery: select 'x'
+    schema:
+      - classpath:SQL/test.sql
+    data:
+      - classpath:SQL/data.sql
+  h2:
+    console:
+      path: /h2
+      enabled: true
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+
+

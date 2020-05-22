@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="/css/publish.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+
+	<div id="TeaTimeConfig">
+		<span>(不做设置则默认100秒)</span><br/>
+		<span>测试时间设置：</span>
+		<select class="H">
+			<option>0时</option>
+			<option>1时</option>
+			<option>2时</option>
+		</select>
+		<select class="M" @mouseover="mHover">
+			<option selected>1分</option>
+			<option v-for="item in minute">{{item}}分</option>
+		</select>
+		<select class="S" @mouseover="mHover">
+			<option selected>40秒</option>
+			<option v-for="item in minute">{{item}}秒</option>
+		</select>
+	</div>
+
+	<div id="publish">
+
+		<div id="div_pubtn">
+			<a id="toPublish"><button type="button" id="btn_publish">发布</button></a>
+		</div>
+		<div class="div_test">
+			<div class="div_que">
+				<input type="radio" name="select_radio" checked="checked"/>
+				<span>【默认】</span>
+				<p></p>
+				<p v-for="ls in defaultTerm">{{ls}}</p>
+				<p>{{defaultEssay}}</p>
+			</div>
+
+			<div class="div_que" th:each="ls:${testLs}">
+				<input type="radio" name="select_radio" th:value="${ls[0]}" />
+				<span>勾选项</span>
+				<p></p>
+				<span th:each="l:${ls}">
+					<p th:text="${l}"></p>
+				</span>
+				<p></p>
+			</div>
+
+		</div>
+
+
+	</div>
+		
+<!--		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+		<script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+		<script src="/js/vue.js"></script>
+		<script src="/js/publish.js"></script>
+	</body>
+</html>

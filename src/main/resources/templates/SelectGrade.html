@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>编号</th>
+        <th>学号</th>
+        <th>姓名</th>
+        <th>成绩</th>
+    </tr>
+    
+    <!--/*@thymesVar id="grades" type="list<stuGrade>"*/-->
+    <tr  th:each="info,infoStat : ${grades}" >
+        <td th:text="${info.id}"></td>
+        <td th:text="${info.stuID}"></td>
+        <th th:text="${info.stuName}"></th>
+        <th th:text="${info.grade}"></th>
+
+    </tr>
+</table>
+<a href="/TeacherIndexController/teacherindex">
+    <input type="button" value="返回首页">
+</a>
+<a href="/TeacherIndexController/StuGradeDownloadsController">
+    <input type="button" value="导出成绩">
+</a>
+</body>
+</html>

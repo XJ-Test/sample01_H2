@@ -1,0 +1,49 @@
+  {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0em;
+  }
+  html{
+    height: 100%;
+  }
+  body{
+    height: 100%;
+  }
+  .main{
+    height: 100%;
+    background-image: linear-gradient(to right,#5ee7df,#b490ca);
+  }
+  .login{
+    
+    width: 400px;
+    height: 500px;
+    padding: 0 50px;
+    border-radius: 20px;
+    position: relative;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+  }
+  .heard{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+  }
+ .input-item ::placeholder{
+    text-transform: uppercase;
+  }
+ .button{
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    margin-top: 40px;
+    background-image: linear-gradient(to right,#30cfd0,#330867);
+    color: #fff;
+  }
+
+
+  a:link { text-decoration:none;}
+  a:active{color: #cccccc; }
+  a:visited {text-decoration:none;}
+  a:hover {color: #cccccc;}

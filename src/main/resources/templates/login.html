@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+			<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+			<link href="css/login.css" rel="stylesheet" type="text/css"/>
+			<script language="JavaScript" src="js/login.js"></script>
+		<title></title>
+	</head>
+	<body>
+	    <div class="div_login">
+	        <h2>登陆</h2>
+
+			<p style="color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+            <form class="form_login">
+			学号：<input type="text" name="stuID" class="stuID"/><br />
+			姓名：<input type="text" name="stuName" class="stuName"/><br />
+<!--			班级：<input type="text" name="stuClass"/><br /><br />--><br />
+			<button type="submit" class="btn_login">进入</button>
+			</form>
+
+		</div>
+	</body>
+</html>

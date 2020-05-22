@@ -1,0 +1,54 @@
+{
+    padding: 0;
+    margin: 0;
+    letter-spacing: .05em;
+  }
+  html{
+    height: 100%;
+  }
+  body{
+    height: 100%;
+  }
+  .main{
+    height: 100%;
+    background-image: linear-gradient(to right,#5ee7df,#b490ca);
+  }
+  .login{
+    background-color: #fff;
+    width: 250px;
+    height: 520px;
+    padding: 0 50px;
+    border-radius: 20px;
+    position: relative;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+  }
+   .heard{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 200px;
+  }
+  .input-item{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 10px;
+    border-bottom: 1px solid rgb(138, 126, 126);
+    font-size: 15px;
+    outline: none;
+  }
+ .input-item ::placeholder{
+    text-transform: uppercase;
+  }
+ .button{
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    margin-top: 40px;
+    background-image: linear-gradient(to right,#30cfd0,#330867);
+    color: #fff;
+  }
+ 

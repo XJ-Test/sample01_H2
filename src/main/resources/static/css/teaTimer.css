@@ -1,0 +1,14 @@
+.time{
+	margin: 50px 0 0 0; 
+	text-align: center;
+}
+#div_mytitle{
+	text-align: center;
+}
+body{
+	background: url(../img/bg_blue.jpg);
+}
+#IP{
+	text-align: center;
+	margin: 0 auto;
+}

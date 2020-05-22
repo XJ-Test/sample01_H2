@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="../static/js/jquery-1.6.1.min.js"></script>
+    <link href="../static/css/login.css" rel="stylesheet" type="text/css"/>
+    <!--<script language="JavaScript" src="../static/js/login.js"></script>-->
+    <title></title>
+</head>
+<body>
+<div class="div_login">
+    <h2>教师登陆</h2>
+    <p style="color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+    <form class="form_login" method="post" action="/userLogin">
+        账号：<input type="text" name="userID"/><br />
+        密码：<input type="password" name="userPwd"/><br />
+        <button type="submit">登录</button>
+    </form>
+</div>
+</body>
+</html>

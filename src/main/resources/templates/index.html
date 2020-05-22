@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<link href="css/index.css" rel="stylesheet" type="text/css">
+		<link href="css/time_ex.css" rel="stylesheet" type="text/css">
+<!--		<link href="css/publish.css" rel="stylesheet" type="text/css">-->
+		<script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+		<script language="JavaScript" src="/js/wordGame.js"></script>
+		<script language="JavaScript" src="/js/termsGame.js"></script>
+		<script language="JavaScript" src="/js/essayGame.js"></script>
+		<script language="JavaScript" src="/js/op_submit.js"></script>
+		<script language="JavaScript" src="/js/timer.js"></script>
+		<script language="JavaScript" src="/js/main.js"></script>c
+		
+
+
+
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="../static/js/termsGame.js"></script>
+	</head>
+	<body oncopy='document.selection.empty()' onpaste='return false;'  >
+		<div class="hidden"></div>
+		<h2 class="ruleTitle"></h2>
+		<div class="div_stuInfo">
+			<h3 th:text="${stuID}" class="stuID_info"></h3>
+			<h3 th:text="${stuName}" class="stuName_info"></h3>
+		</div>
+	    <span class="div_tipGrade">得分:</span><div class="runtest"></div> 
+        <div class="div_wordGame"></div>
+		<div class="time">
+			<div class="time-item">
+                <!--<span id="day_show">0天</span>-->
+                <strong id="hour_show">0时</strong>
+                <strong id="minute_show">0分</strong>
+                <strong id="second_show">0秒</strong>
+           </div>
+		</div>
+		<div class="div_out">
+			<div class="context"></div>
+			<div class="tip">
+			</div>
+		</div>
+		
+		<div class="div_terms">
+			<input type="text"  class="terms_input" style="overflow: auto" autofocus="autofocus" onpaste=="return false;"/> <button class="nextButton">下一个</button>
+		</div>
+		
+		<div class="input_Area">
+				<textarea class="input"  autofocus="autofocus"></textarea>
+			    <span class="button">
+
+			        <button type="button" class="btn_submit">下一个</button>
+			    </span>
+		</div>
+		<div class="testGrade">
+			<ul class="testGrade_ul">
+				<li class="li_tip"></li>
+				<li class="li_rateTrue"></li>
+				<li class="li_rateBat"></li>
+				<li class="li_grade"></li>
+				<!--<li> <button class="close_bt" onclick="window.close();">关闭</button></li>-->
+			</ul>
+		</div>
+		
+	</body>
+</html>
