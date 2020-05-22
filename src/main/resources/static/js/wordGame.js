@@ -1,5 +1,5 @@
 function wordGame(ls) {
-	var Arr = ['a','b','c','d','e'];
+	var Arr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 	function randomsort(a, b) {
     return Math.random()>.5 ? -1 : 1;
     //用Math.random()函数生成0~1之间的随机数与0.5比较，返回-1或1
@@ -42,7 +42,7 @@ function wordGame(ls) {
          	    setTimeout(function(){
          	    	$(".context").text(Arr[i]);
                     $('.tip').css('display','none');
-                    if(1==i){
+                    if(5==i){
 			            $('.ruleTitle').text('单词任务，文本框内输入')
 			            $('.div_terms').css('display','block');
 			            $('.tip').css('display','none');

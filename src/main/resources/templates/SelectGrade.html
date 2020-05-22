@@ -2,31 +2,39 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+    <link href="../static/css/SelectGrade.css" rel="stylesheet" type="text/css"/>
+    <script language="JavaScript" src="js/login.js"></script>
     <title>Title</title>
 </head>
 <body>
-<table border="1">
-    <tr>
-        <th>编号</th>
-        <th>学号</th>
-        <th>姓名</th>
-        <th>成绩</th>
-    </tr>
-    
-    <!--/*@thymesVar id="grades" type="list<stuGrade>"*/-->
-    <tr  th:each="info,infoStat : ${grades}" >
-        <td th:text="${info.id}"></td>
-        <td th:text="${info.stuID}"></td>
-        <th th:text="${info.stuName}"></th>
-        <th th:text="${info.grade}"></th>
+<div class="div_login">
+    <h2>学生成绩导出</h2>
+    <table border="1">
+        <div class="div_gradeTB">
+            <table border="1" class="gradeTB" align="center">
+                <tr>
+                    <th>编号</th>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>成绩</th>
+                </tr>
 
-    </tr>
-</table>
-<a href="/TeacherIndexController/teacherindex">
-    <input type="button" value="返回首页">
-</a>
-<a href="/TeacherIndexController/StuGradeDownloadsController">
-    <input type="button" value="导出成绩">
-</a>
+                <!--/*@thymesVar id="grades" type="list<stuGrade>"*/-->
+                <tr  th:each="info,infoStat : ${grades}" >
+                    <td th:text="${info.id}"></td>
+                    <td th:text="${info.stuID}"></td>
+                    <th th:text="${info.stuName}"></th>
+                    <th th:text="${info.grade}"></th>
+
+                </tr>
+            </table>
+
+            <a href="/TeacherIndexController/teacherindex">
+                </br><button type="submit" class="btn_login">返回首页</button></br>
+            </a>
+            <a href="/TeacherIndexController/StuGradeDownloadsController">
+                <button type="submit" class="btn_login">导出成绩</button>
+            </a>
 </body>
 </html>

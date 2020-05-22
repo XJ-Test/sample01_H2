@@ -1,54 +1,44 @@
-  {
-    padding: 0;
-    margin: 0;
-    letter-spacing: 0em;
-  }
-  html{
-    height: 100%;
-  }
-  body{
-    height: 100%;
-  }
-  .main{
-    height: 100%;
-    background-image: linear-gradient(to right,#5ee7df,#b490ca);
-  }
-  .login{
-    
-    width: 400px;
-    height: 500px;
-    padding: 0 50px;
-    border-radius: 20px;
-    position: relative;
-    left: 50%;
-    top:50%;
-    transform: translate(-50%,-50%);
-  }
-  .heard{
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 200px;
-  }
+body{
+  background: url(../img/bg_blue.jpg);
+}
 
-  .btn_determine{
-    padding: 8px;
-    margin-top: 20px;
-    background-image: linear-gradient(to right,#30cfd0,#330867);
-    color: #fff;
-  }
-  .btn{
-    text-align: center;
-    padding: 6px;
-    width: 30%;
-    margin-top: 8px;
-    background-image: linear-gradient(to right,#30cfd0,#330867);
-    color: #fff;
-  }
-   .up{
-   height: 40px;
-   width: 300px;
-   }
-   ._span{
-     style:"color:#F00";
-   }
+.heard{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+}
+h2{
+  text-align: center;
+  color: orange;
+}
+.div_gradeTB{
+  text-align: center;
+
+}
+
+
+
+
+
+button {
+  padding: 20px;
+  width: 35%;
+  margin-top: 40px;
+  background-color:#97CBFF; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  margin-left:30px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+
+a:link { text-decoration:none;}
+a:active{color: #cccccc; }
+a:visited {text-decoration:none;}
+a:hover {color: #cccccc;}

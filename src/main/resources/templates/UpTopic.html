@@ -12,19 +12,24 @@
 <body>
 <div class="main">
 
-    <div class="login">
-        <div class="heard">上传文件</div>
-        <span th:text="${tip}" class="_span" style="color:#F00"></span>
-        <form  action="/UpTopicController"  method="post" enctype="multipart/form-data">
+    <div class="div_login">
+        <h2>上传文件</h2>
+        <table border="1">
+            <div class="div_gradeTB">
+                <span th:text="${tip}" class="_span" style="color:#F00"></span>
+                <form  action="/UpTopicController"  method="post" enctype="multipart/form-data">
 
-            <input type="file" name="file" id="pic" accept="" class="up" />
-            <input type="submit" value="确定" class="btn_determine" >
-        </FORM>
-        <a href="TeacherIndex">
-            <input type="button" value="返回" class="btn" >
-        </a>
+                    <input type="file" name="file" id="pic" accept="" class="up" />
+                    </br><button type="submit" class="btn_login">确认</button></br>
+                </FORM>
+                <a href="teacherindex">
+                    <button type="button" class="btn_login">返回</button>
+                </a>
 
 
+
+</body>
+</html>
 
 </body>
 </html>

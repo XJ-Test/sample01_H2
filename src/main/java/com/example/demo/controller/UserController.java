@@ -76,6 +76,7 @@ public class UserController {
                             userTemp.setUserPwd(newPwd);
                             if(userMapper.changeUserPassword(userTemp)!=0){
                                 System.out.println("更改成功！");
+                                map.put("msg","更改成功！");
                                 return "TeacherIndex";
                             }else {
                                 System.out.println("更新失败!");

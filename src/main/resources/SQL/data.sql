@@ -6,7 +6,7 @@
 -- 3,'孙三','1',24,'142323198610051236','12345678912','qe259@165.com',sysdate,sysdate,'0');
 
 
-INSERT INTO tb_stuGrade (stuID,stuName,grade) VALUES('1708940300','曾桦',100),('1738940300','好哥',100);
+--INSERT INTO tb_stuGrade (stuID,stuName,grade) VALUES('1708940300','曾桦',100),('1738940300','好哥',100);
 
 
-INSERT INTO tb_user (userID,userName,userPwd) VALUES('root','罗老师','123456qaz');
+INSERT INTO tb_user (userID,userName,userPwd) VALUES('root','罗老师','123456');

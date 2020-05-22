@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-   
-   <link rel="stylesheet" type="text/css" href="../static/css/teatherindex.css" />
-	</head>
-	<body>
-  <div class="main">
-    <div class="login">  
-      <div class="heard">web打字练习系统</div>
-      <div class="form">
-      <a href="/TeacherIndexController/userChangePwd">
-          <div class="button">改账号密码</div>
-      </a>
-      <a href="/TeacherIndexController/UpTopic">
-          <div class="button">上传题目</div>
-      </a>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
 
-      <a href="/TeacherIndexController/teapublish"><div class="button">发布题目</div></a>
+    <link rel="stylesheet" type="text/css" href="../static/css/teatherindex.css  " />
+</head>
 
+<body>
+<div class="div_login">
+    <h2>web打字练习系统</h2>
+    <table border="1">
+        <div class="div_gradeTB">
+            <p style="color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+            <form class="form_login">
+                <a href="/TeacherIndexController/userChangePwd">
+                    <button type="button" class="button">改账号密码</button></br>
+                </a>
+                <a href="/TeacherIndexController/UpTopic">
+                    <button type="button" class="button">上 传 题 目</button></br>
+                </a>
 
-      <a href="/TeacherIndexController/StuGradeDownloadsController">
-          <div class="button">导出成绩</div>
-      </a>
+                <a href="/TeacherIndexController/teapublish">
+                    <button type="button" class="button">发 布 题 目</button></br>
+                </a>
 
-      </div>
-     
-      </div>
-    </div>
-  </div>
+                <a href="/TeacherIndexController/StuGradeDownloadsController">
+                    <button type="button" class="button">导 出 成 绩 </button></br>
+            </form>
+
+        </div>
 </body>
 </html>
